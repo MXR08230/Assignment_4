@@ -47,7 +47,7 @@ scaler = preprocessing.StandardScaler()
 scaler.fit(x)
 X_scaled_array = scaler.transform(x)
 X_scaled = pd.DataFrame(X_scaled_array)
-
+#Implementing KMeans on scaled features
 from sklearn.cluster import KMeans
 nclusters = 2
 km = KMeans(n_clusters=nclusters)
